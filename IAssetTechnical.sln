@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iassetTechnical", "iassetTechnical\iassetTechnical.csproj", "{C720EB72-ACF3-4361-AC96-DBEF2BFAFC93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{E62FC57E-6D54-4DD2-BC87-011AD5B45E05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C720EB72-ACF3-4361-AC96-DBEF2BFAFC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C720EB72-ACF3-4361-AC96-DBEF2BFAFC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C720EB72-ACF3-4361-AC96-DBEF2BFAFC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C720EB72-ACF3-4361-AC96-DBEF2BFAFC93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62FC57E-6D54-4DD2-BC87-011AD5B45E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62FC57E-6D54-4DD2-BC87-011AD5B45E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62FC57E-6D54-4DD2-BC87-011AD5B45E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62FC57E-6D54-4DD2-BC87-011AD5B45E05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

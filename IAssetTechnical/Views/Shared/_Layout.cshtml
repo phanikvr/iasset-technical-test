@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="weatherModule">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>iasset technical test</title> 
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="has-error">
+        {{errorMessage}}
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>ASP.NET MVC Application</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/angular");
+    @*<script src="~/Scripts/app/Directives/ngAutocomplete.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>*@        
+    <script src="~/Scripts/app/Modules/app.module.js"></script>    
+    <script src="~/Scripts/app/Services/WeatherService.js"></script>
+    <script src="~/Scripts/app/Controllers/Weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<div ng-controller="WeatherController">
+    <table cellspacing="0" cellpadding="4" frame="box" bordercolor="#dcdcdc" rules="none" style="border-collapse: collapse;">
+        <tbody>
+
+            <tr>
+                <td class="frmText">Select Country:</td>
+                <td><select ng-model="WeatherRequestVModel.country" ng-options="item.name as item.name for item in Countries" ng-change="populateCities()" /></td>
+            </tr>
+            <tr>
+                <td class="frmText">select City:</td>
+                <td><select ng-model="WeatherRequestVModel.city" ng-options="item as item for item in Cities" /></td>
+            </tr>
+            <tr>               
+                <td><input type="checkbox" ng-model="WeatherRequestVModel.usemock"> Use Mock Data</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="right"> <input id="btnWeatherSubmit" type="submit" value="Get Weather" ng-click="getWeather()" class="button"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div ng-show="show">       
+        <ul>
+            <li>Location         :{{WeatherResponseVModel.Location }}       </li>
+            <li>Time             :{{WeatherResponseVModel.Time }}           </li>
+            <li>Wind             :{{WeatherResponseVModel.Wind }}           </li>
+            <li>Visibility       :{{WeatherResponseVModel.Visibility }}     </li>
+            <li>Sky conditions   :{{WeatherResponseVModel.SkyConditions }}  </li>
+            <li>Temperature      :{{WeatherResponseVModel.Temperature}}     </li>
+            <li>Dew Point        :{{WeatherResponseVModel.DewPoint}}        </li>
+            <li>Relative Humidity:{{WeatherResponseVModel.RelativeHumidity}}</li>
+            <li>Pressure         :{{WeatherResponseVModel.Pressure }}       </li>
+        </ul>
+    </div>
+</div>
